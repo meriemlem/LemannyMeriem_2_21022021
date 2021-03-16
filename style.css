@@ -1,0 +1,49 @@
+
+ @font-face
+  {
+        font-family: 'Raleway-Regular';
+        src: url('Raleway-Regular.ttf') format('truetype');
+ }
+ @font-face
+ {
+       font-family: 'Raleway-bold';
+       src: url('Raleway-Regular-bold.ttf') format('truetype');
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+.filterbuttons
+ {
+    color: black;
+    background-color: white;
+    border: #e6e6e6 2px;
+    border-style: solid;
+    border-radius: 16px;
+    font-size: 13px;
+    margin: 1px 1px 1px 1px;
+    font-weight: bold;
+    width: 130px;
+    font-family:'Raleway-bold', Impact, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.filterlabels
+{
+    padding: 10px;
+   /* font-family: 'Raleway-Regular' Impact, 'Arial Narrow Bold', sans-serif;*/
+}
+
+
+.myfas
+{
+    background-color: #e6e6e6;
+    border-radius: 11px;
+    /* border-radius: 12px 11px 11px 4px; */
+    border-style: hidden;
+    padding: 8px 7px;
+    color: blue;
+    font-size: 10px;
+}
