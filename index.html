@@ -9,28 +9,104 @@
 </head>
 
 <header>
-    <nav> <!-- le menu de -->
-        <ul>
-            <li><a href="#" >Hébergement</a></li>
-            <li><a href="#" >Activités</a></li>
-            <li><a href="#" >S'inscrire</a></li>
-        </ul>
-    </nav>
+    <div class="header">
+    <div id="containerlogo">
+        <img id="imglogo" src="images/logo/Reservia@3x.png"><!--website logo-->
+    </div>
+    <div class="containernav">
+        <nav > <!-- navigation bar -->
+            <ul>
+                <li><a class="container_heb_act" href="#" >Hébergement</a></li>
+                <li><a class="container_heb_act" href="#" >Activités</a></li>
+            </ul>
+        </nav>
+    </div> 
+        <div class="containerlogin">
+            <a id="loginstyle" href="#" >S'inscrire</a>
+        </div>
+    </div>
 
-    <img src="images/logo/Reservia@3x.png"> <!--website logo-->
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
     <h2>En plein centre ville ou en pleine nature</h2>
-    <i class="fas fa-map-marker-alt"></i> <!-- localisation icon-->
-    <input type="search" placeholder="Marselle, France" name="q" /><button>Rechercher</button>
+    <div id="container_search">
+        <i class="fas fa-map-marker-alt mapfa"></i> <!-- localisation icon-->
+        <input id="serchholder" type="search" placeholder="Marselle, France" name="q" />
+        <button id="serchbutton">Rechercher</button>
+</div>
+    <br/>
 
-    <nav>
-        <ul> <!-- filters list-->
-            <li>Filtres</li>
-            <li class="filterbuttons"><i class="fas fa-money-bill-wave myfas"></i ><label class="filterlabels">Économique</label></li>
-            <li><i class="fas fa-child"></i><a href="#" >Familial</a></li>
-            <li><i class="fas fa-heart"></i><a href="#" >Romantique</a></li>
-            <li><i class="fas fa-dog"></i><a href="#" >Animaux autorisés</a></li>
+    <nav id="container_filters">
+        <ul id="navfilter"> <!-- filters list-->
+            <li class="filterword"><label>Filtres</label></li>
+            <li class="stylelabel1"><i class="fas fa-money-bill-wave myfas"></i ><label class="filterlabels">Économique</label></li>
+            <li class="stylelabel2"><i class="fas fa-child myfas"></i><label class="filterlabels"></label>Familial</a></li>
+            <li class="stylelabel3"><i class="fas fa-heart myfas"></i><label class="filterlabels"></label>Romantique</a></li>
+            <li class="stylelabel4"><i class="fas fa-dog myfas"></i><label class="filterlabels"></label>Animaux autorisés</a></li>
         </ul>
     </nav>
 </header>
+<main>
+    <div id="containerinfo">
+    <i class="fas fa-info fainfo"></i>
+    <p id="pinfo">plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
+        <section id="secheber">
+            <div id="main">
+                <p> Hébergement à Marselle</p>
+                <a href="#">
+                    <figure class="figstyle">
+                        <img id="imgheber" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <figcaption class="figcap">Auberge la Cannebière</figcaption>
+                        <label class="fcap">Nuit à partir de 25€</label>
+                    </figure>
+                </a>
+            </div>
 
+            <aside id="side">
+                <div id="graph">
+                    <p>Les plus populiares</p>
+                    <i class="fas fa-chart-line mapfa"></i>
+                </div>
+                <figure class="figstyle">
+                    <img class="imgside" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                    <figcaption class="figcap">Hôtel Le soleil du matin</figcaption>
+                    <label class="fcap">Nuit à partir de 128€</label>
+                </figure>
+
+            </aside>
+        </section>
+
+
+
+
+
+
+
+</main>
+
+<footer id="container_footer">
+    <nav>
+        <ul>
+            <li class="titles_footer">A propos</li>
+            <li><a href="#">Fonctonnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <ul>
+            <li class="titles_footer">Nos hebergements</li>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <ul>
+            <li class="titles_footer">Assistance</li>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+        </ul>
+    </nav>
+</footer>
