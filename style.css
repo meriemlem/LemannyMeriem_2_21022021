@@ -10,13 +10,6 @@
         font-style: normal;
 }
 
-@font-face{
-    font-family: 'Thin';
-    src: url(Raleway-Police/Raleway-Thin.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body
 {
     font-family: 'Raleway', 'sans-serif';
@@ -43,7 +36,7 @@ nav a, body section a
 .container_heb_act
 {
 /*   padding-left: 30px;*/
-    padding: 0px 21px;
+    padding: 16px 21px;
 }
 header nav a:hover
 {
@@ -67,9 +60,9 @@ border-top-width: thin;
 }
 .containerlogin
 {
-    color: blue;
+    color:#0065FC;
     text-align: end;
-    padding: 0px 5px 0pc 20px;
+    padding: 0px 15px 0pc 20px;
 }
 
 header nav ul{
@@ -133,7 +126,7 @@ header h2
 
 #serchbutton
 {
-    background-color: blue;
+    background-color: #0065FC;
     color: white;
     border-style: hidden;
     border-top-right-radius: 8px;
@@ -141,6 +134,7 @@ header h2
     width: 83px;
     height: 32px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 #serchholder
@@ -218,13 +212,13 @@ header h2
 
 i
 {
-    color: blue;
+    color:#0065FC;
     font-size: 10px;
 }
 
 #secheber
 {
-    /*width: 750px;*/
+    width: 100%;
     height: 350px;
     display: flex;
     justify-content: space-between;
@@ -280,22 +274,39 @@ i
 .fcap
 {
     font-size: 9px;
+    padding-left: 14px;
+}
+
+.fcap2
+{
+    font-size: 14px;
+    padding-left: 14px;
 }
 
 #main
 {
     display:flex;
     flex-direction: column;
-    width: 75%;
-    max-width: 70%;
+    flex: 60%;
+    /*border-right: 19px;
+    border-style: solid;
+    border-color: white;*/
     background-color: #f2f2f2;
+
 
 }
 
 #side
 {
     background-color: #f2f2f2;
+    flex: 24%;
 }
+
+#empty
+{
+    flex: 1%;
+}
+
 
 #graph
 {
@@ -316,7 +327,18 @@ i
     font-weight: bolder;
 }
 
+.container_column1
+{
+    width: 100%;
+}
 
+.img_column1
+{
+    width: 25%;
+    height: 268px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
 
 
 
@@ -336,3 +358,41 @@ main{
 {
     border: 3px solid;
 }
+
+/*for mobile*/
+@media screen and (max-width: 600px) {
+    
+    .containernav
+    {
+        order: 3;
+        border-bottom: 2px solid lightgrey;
+    }
+
+    .container_heb_act
+    {
+    }
+    
+    #containerlogo
+    {
+        order: 1;
+        flex: 25%;
+    }
+
+    .containerlogin
+    {
+        order: 2;
+    }
+
+    header nav ul{
+        justify-content: space-around;
+        flex: 100%;
+        padding: initial;
+    }
+
+    header nav a:hover
+    {
+        border-bottom: 3px solid blue;
+        border-top: none
+    }
+    }
+    
