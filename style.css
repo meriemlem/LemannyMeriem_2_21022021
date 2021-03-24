@@ -116,8 +116,6 @@ header h2
     border-style: hidden;
     background-color: #f2f2f2;
     width: 28px;
-    height: 32px;
-    float: left;
     font-size: 12px;
     padding: 10px 2px 1px 11px;
     border-top-left-radius: 11px;
@@ -246,24 +244,28 @@ i
     margin: 3px 0px 0px 20px;
     padding-top: 2px;
 }
-.figstyle
+
+.container_figure-section1
 {
+    width: 30%;
+}
+.figure_style1
+{
+    margin: 0;
     border-style: hidden;
     background-color: white;
-    width: 135px;
-    height: 106px;
+    width: 100%;
     border-radius: 10px;
 }
 
-#imgheber, .imgside
+#imgheber
 {
-    width: 127px;
-    height: 68px;
+    width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    float: left;
     padding: 3px 3px 1px 4px;
 }
+
 
 .figcap
 {
@@ -271,13 +273,13 @@ i
     font-weight: bold;
 }
 
-.fcap
+.p_fig
 {
     font-size: 9px;
     padding-left: 14px;
 }
 
-.fcap2
+.figcap
 {
     font-size: 14px;
     padding-left: 14px;
@@ -292,6 +294,7 @@ i
     border-style: solid;
     border-color: white;*/
     background-color: #f2f2f2;
+    border-radius: 13px;
 
 
 }
@@ -300,6 +303,39 @@ i
 {
     background-color: #f2f2f2;
     flex: 24%;
+    border-radius: 13px;
+
+}
+
+.graphfa
+{
+    font-size: 12px;
+    color: black;
+    padding-right: 31px;
+}
+
+.container_figure3
+{
+    width: 90%;
+    height: 30%;
+    margin: auto;
+}
+.figure_style3
+{
+    margin: 0%;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+}
+
+.imgside
+{
+    width: 30%;
+    padding: 4px 0px 4px 4px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
 }
 
 #empty
@@ -312,7 +348,28 @@ i
 {
     display: flex;
     align-items: baseline;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0px 6%;
+}
+
+
+#sec_activités
+{
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 47px 0px;
+}
+
+.figure_style2
+{
+    width: 94%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    box-shadow: 1px 2px 7px lightgrey;
+    border-radius: 11px;
 }
 
 #container_footer
@@ -320,6 +377,8 @@ i
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-radius: 11px;
+    box-shadow: 1px 2px 7px lightgrey;
 }
 
 .titles_footer
@@ -329,21 +388,49 @@ i
 
 .container_column1
 {
-    width: 100%;
+    width: 25%;
 }
 
 .img_column1
 {
-    width: 25%;
-    height: 268px;
+    height: 90%;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
 }
 
+.container_column2
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    justify-content: space-between;
+}
 
+#fig2
+{
+    margin: auto;
+    width: 93%;
+    height: 70%;
+    box-shadow: 1px 2px 7px lightgrey;
+}
 
+#fig3
+{
+    margin: auto;
+    width: 93%;
+    box-shadow: 1px 2px 7px lightgrey;
+}
+#img_fig2
+{
+    width: 100%;
+    height: 84%;
+}
 
-
+#img_fig3
+{
+    width: 100%;
+}
 header
 {
     border: 3px solid red;
@@ -359,7 +446,9 @@ main{
     border: 3px solid;
 }
 
-/*for mobile*/
+/*--------------------------------------------------------------------*/
+           /*for mobile*/
+
 @media screen and (max-width: 600px) {
     
     .containernav
