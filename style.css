@@ -13,8 +13,18 @@
 body
 {
     font-family: 'Raleway', 'sans-serif';
+    margin: 0;
 }
 
+header
+{
+    margin: 0 2%;
+}
+
+main
+{
+    margin: 0 2%;
+}
 #imglogo
 {
     height: 53px;
@@ -34,14 +44,12 @@ nav a, body section a
 
 .container_heb_act
 {
-/*   padding-left: 30px;*/
     padding: 12px 24px;
 }
 header nav a:hover
 {
-border-top: 1px solid;
-color: blue;
-
+    border-top: 1px solid;
+    color: blue;
 }
 
 .containerlogo
@@ -69,13 +77,11 @@ header nav ul{
     width: 100%;
     justify-content: flex-end;
     padding: 0px;
-
 }
 
 nav ul
 {
     list-style-type: none;
-
 }
 
 #loginstyle
@@ -138,6 +144,8 @@ header h2
 #serchholder
 {
     width: 25%;
+    font-size: 19px;
+    margin-left: 5px;
     border-top-style: solid;
     border-bottom-style: solid;
     border-right-style: hidden;
@@ -166,6 +174,7 @@ header h2
     font-weight: bold;
     font-size: 19px;
 }
+
 .stylelabel1, .stylelabel2, .stylelabel3, .stylelabel4
  {
     color: black;
@@ -198,6 +207,7 @@ header h2
     color: white;
     background-color: #0065FC;
 }
+
 .filterlabels
 {
     padding-left: 8%;
@@ -210,12 +220,9 @@ header h2
     background-color: #DEEBFF;
     border-radius: 30px;
     font-size: 20px;
-    /* border-radius: 12px 11px 11px 4px; */
     border-style: hidden;
     padding: 10px;
     cursor: pointer;
-   /* color: blue;*/
-    
 }
 
 i
@@ -229,7 +236,7 @@ i
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .fainfo
@@ -248,7 +255,9 @@ i
     display: flex;
     flex-direction: row;
 }
-#pinfo{
+
+#pinfo
+{
     padding-left: 23px;
 }
 
@@ -257,22 +266,25 @@ i
     width: 100%;
     font-weight: bold;
     padding-left: 2%;
+    font-size: 20px;
 }
 
 .p2_section
 {
-    font-size: 12px;
+    font-size: 17px;
 }
 
 .p_section2
 {
     padding-left: 1%;
 }
+
 .container_figure-section1
 {
     width: 30%;
     padding-bottom: 3%;
 }
+
 .figure_style1
 {
     margin: 0;
@@ -297,6 +309,7 @@ i
 {
     color: lightgray;
 }
+
 .figcap
 {
     font-size: 16px;
@@ -312,7 +325,6 @@ i
 }
 
 .fig_align
-
 {
     padding: 3% 5%;
 }
@@ -323,9 +335,6 @@ i
     flex-wrap: wrap;
     justify-content: space-around;
     width:65%;
-    /*border-right: 19px;
-    border-style: solid;
-    border-color: white;*/
     background-color: #f2f2f2;
     border-radius: 13px;
 
@@ -344,10 +353,9 @@ i
 
 .graphfa
 {
-    font-size: 12px;
+    font-size: 20px;
     color: black;
-    padding-right: 2%
-;
+    padding-right: 2%;
 }
 
 .container_caption
@@ -402,7 +410,7 @@ i
 
 .figure_style2
 {
-    width: 94%;
+    width: 90%;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -429,7 +437,6 @@ i
     display: flex;
     flex-direction: column;
     width: 25%;
-    /*height: 100%;*/
     justify-content: space-between;
 }
 
@@ -437,7 +444,7 @@ i
 {
     margin: auto;
     width: 93%;
-    height: 230px;
+    height: 220px;
     box-shadow: 1px 2px 7px lightgrey;
     border-radius: 14px;
 }
@@ -450,13 +457,18 @@ i
     box-shadow: 1px 2px 7px lightgrey;
     border-radius: 14px;
 }
+
 .figcapact
 {
     font-size: 16px;
     font-weight: bold;
-    padding: 2%;
+    margin: 1px 0 1px 10px;
 }
 
+.figcapstyle
+{
+    margin: 6px 13px;
+}
 
 #img_fig2
 {
@@ -480,12 +492,10 @@ i
 {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 2%;
     width: 100%;
-    height: 150px;
-    justify-content: center;
-    align-items: center;
     background-color: #f2f2f2;
+    padding:18px;
+    justify-content: space-around;
 }
 
 .titles_footer
@@ -495,7 +505,8 @@ i
 
 .nav_footer
 {
-    width: 33%;
+    width: 220px;
+    padding-top: 21px;
 }
 
 .ul_footer
@@ -535,18 +546,17 @@ i
         order: 2;
     }
 
-    
-
     header nav a:hover
     {
         border-bottom: 2px solid #0065FC;
-        border-top: none
+        border-top: none;
     }
     
-    header nav ul{
+    header nav ul
+    {
         display: flex;
         width: 100%;
         justify-content: space-around;
         padding: 0px;
-    
     }
+}
