@@ -34,6 +34,7 @@ main
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-bottom: 2%;
 }
 
 nav a, body section a
@@ -44,12 +45,12 @@ nav a, body section a
 
 .container_heb_act
 {
-    padding: 12px 24px;
+    padding: 12px 30px;
 }
 header nav a:hover
 {
     border-top: 1px solid;
-    color: blue;
+    color: #0065FC;
 }
 
 .containerlogo
@@ -64,6 +65,7 @@ header nav a:hover
     flex: 60%;
     display: flex;
     justify-content: flex-end;
+    font-size: 20px;
 }
 
 .containerlogin
@@ -87,9 +89,10 @@ nav ul
 #loginstyle
 {
     text-decoration: none;
-    color: blue;
+    color: #0065FC;
     font-weight: bold;
     padding: 12px 18px;
+    font-size: 20px;
 
 }
 
@@ -113,6 +116,7 @@ header h2
 
 #container_search
 {
+    height: 39px;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -121,8 +125,7 @@ header h2
     color: black;
     border-style: hidden;
     background-color: #f2f2f2;
-    width: 4%;
-    padding: 1%;
+    padding: 0.5em;
     font-size: 18px;
     border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
@@ -131,26 +134,37 @@ header h2
 
 #serchbutton
 {
+    display: flex;
+    align-items: baseline;
     background-color: #0065FC;
     color: white;
     border-style: hidden;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    width: 11%;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
     font-size: 16px;
     cursor: pointer;
 }
 
+.recherche
+{
+    margin: 11px 0;
+}
+
+.zoom_icon
+{
+    visibility: hidden;
+    position: absolute;
+}
+
 #serchholder
 {
-    width: 25%;
     font-size: 19px;
-    margin-left: 5px;
     border-top-style: solid;
     border-bottom-style: solid;
     border-right-style: hidden;
     border-left-style: hidden;
     border-color: #f2f2f2;
+    padding-left: 11px;
 }
 
 #container_filters
@@ -258,7 +272,7 @@ i
 
 #pinfo
 {
-    padding-left: 23px;
+    padding: 0 1px 0 24px;
 }
 
 .p_section, .p2_section, .p_section2
@@ -293,6 +307,7 @@ i
     background-color: white;
     width: 100%;
     border-radius: 10px;
+    box-shadow: 1px 2px 7px lightgrey;
 }
 
 #imgheber
@@ -310,23 +325,34 @@ i
     color: lightgray;
 }
 
+
 .figcap
 {
     font-size: 16px;
     font-weight: bold;
-    padding-bottom: 1%;
-
+    margin: 7px 0 0 7px;
 }
 
 .p_fig
 {
     font-size: 12px;
-    margin: 0%;
+    margin: 2px 7px;
 }
 
 .fig_align
 {
     padding: 3% 5%;
+}
+
+.p_side
+{
+    font-size: 12px;
+
+
+}
+.cantainer_star
+{
+    margin: 2px 7px;
 }
 
 #main
@@ -360,10 +386,10 @@ i
 
 .container_caption
 {
-    padding-top: 4%;
+    height: 100%;
     padding-left: 5%;
-    height: 30%;
 }
+
 .container_figure3
 {
     width: 90%;
@@ -389,8 +415,28 @@ i
     object-fit: cover;
 }
 
+.h2_side
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 6px 0 0 0;
+}
 
+.p_star
+{
+    height: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.p2_star
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55%;
+}
 #graph
 {
     display: flex;
@@ -440,7 +486,7 @@ i
     justify-content: space-between;
 }
 
-#fig2
+.fig2
 {
     margin: auto;
     width: 93%;
@@ -516,6 +562,88 @@ i
 
 
 /*-------------------------------------------------------------------------------*/
+                            /*for Tablette*/
+
+@media screen and (max-width: 768px) {
+
+    #containerlogo
+    {
+        flex: 10%;
+    }
+
+    .containernav
+    {
+        flex: 50%;
+    }
+
+    #container_serch{
+        height: 40px;
+    }
+    .mapfa
+    {
+        width: 37px;
+    }
+
+    .filterword{
+        width: 100%;
+    }
+
+    #serchholder{
+        font-size:16px ;
+        width: initial;
+        font-weight: bold;
+    }
+
+    #serchbutton{
+        font-size:16px;
+        width: initial;
+    }
+    #main
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container_figure-section1
+    {
+        width: 50%;
+    }
+
+    #side
+    {
+        width: 100%;
+    }
+    
+    #graph
+    {
+        margin: 0px;
+    }
+
+    .container_column1
+    
+    {
+        width: 50%;
+    }
+    
+    .container_column2
+    
+    {
+        width: 50%;
+    }
+
+    #container_footer
+    {
+        display: flex;
+        justify-content: end;
+    }
+
+    .nav_footer
+    {
+        width: 50%;
+    }
+}
+
+/*-------------------------------------------------------------------------------*/
                             /*for mobile*/
 
 @media screen and (max-width: 600px) {
@@ -523,9 +651,6 @@ i
     .containernav
     {
         order: 3;
-        display: flex;
-        justify-content: flex-end;
-        flex: 60%;
     }
 
     .container_heb_act
@@ -559,4 +684,110 @@ i
         justify-content: space-around;
         padding: 0px;
     }
+
+    header h1
+    {
+        font-weight: bold;
+        font-size: 26px;
+    }
+    Header h2
+    {
+        font-size: 21px;
+        margin-bottom: 27px;
+    }
+
+    #container_search
+    {
+        width: 100%;
+        height: 50px;
+    }
+
+    #serchholder
+    {
+        width: 70%;
+        font-size: 23px;
+    }
+
+    .mapfa
+    {
+        width: 13%;
+        padding-top: 14px;
+        font-size: 21px;
+    }
+
+    #serchbutton
+    {
+        width: 13%;
+    }
+    .recherche
+    {
+        visibility: hidden;
+    }
+
+    .zoom_icon
+    {
+        color: white;
+        font-size: 24px;
+        visibility: initial;
+        padding: 10px 5px;
+    }
+    
+    #container_h1_h2_search
+    {
+        padding-left: 4%;
+    }
+
+    #container_info
+    {
+        padding-left: 5%;
+    }
+
+    #pinfo
+    {
+        font-size: 17px;
+    }
+
+    main
+    {
+        margin: 0;
+    }
+
+    #main
+    {
+        order: 2;
+        width: 100%;
+        margin-bottom: 20px;
+        background: unset;
+        border-radius: unset;
+    }
+
+    #side
+    {
+        order: 1;
+        border-radius: unset;
+    }
+
+    #graph
+    {
+        padding: 0 15px;
+    }
+    .container_figure-section1
+    {
+        width: 100%;
+    }
+
+    .container_column1 {
+        width: 100%;
+        
+    }
+
+    .container_column2 {
+        width: 100%;
+    }
+
+    .nav_footer
+    {
+        width: 100%;
+    }
+
 }
