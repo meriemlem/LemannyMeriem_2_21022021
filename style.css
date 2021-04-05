@@ -668,6 +668,9 @@ i
 
 @media screen and (max-width: 600px) {
     
+    header{
+        margin: 0;
+    }
     .containernav
     {
         order: 3;
@@ -683,7 +686,7 @@ i
     #containerlogo
     {
         order: 1;
-        flex: 25%;
+        margin-left: 15px;
     }
 
     .containerlogin
