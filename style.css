@@ -116,17 +116,19 @@ header h2
 
 #container_search
 {
-    height: 39px;
+    height: 48px;
     display: flex;
     flex-wrap: nowrap;
+    margin-top: 20px;
 }
 .mapfa
 {
     color: black;
+    width: 55px;
     border-style: hidden;
     background-color: #f2f2f2;
-    padding: 0.5em;
-    font-size: 18px;
+    padding: 0.7em;
+    font-size: 20px;
     border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
     text-align: center;
@@ -134,14 +136,12 @@ header h2
 
 #searchbutton
 {
-    display: flex;
-    align-items: baseline;
     background-color: #0065FC;
     color: white;
     border-style: hidden;
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     outline: none;
 }
@@ -160,6 +160,7 @@ header h2
 #serchholder
 {
     font-size: 19px;
+    font-weight: bold;
     border-top-style: solid;
     border-bottom-style: solid;
     border-right-style: hidden;
@@ -598,8 +599,6 @@ i
 
     #serchholder{
         font-size:16px ;
-        width: initial;
-        font-weight: bold;
     }
 
     #searchbutton{
@@ -780,10 +779,10 @@ i
 
     .zoom_icon
     {
+        position: initial;
         color: white;
         font-size: 24px;
         visibility: visible;
-        padding: 3% 2%;
     }
     
     #container_h1_h2_search
