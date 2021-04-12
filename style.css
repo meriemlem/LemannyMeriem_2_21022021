@@ -146,15 +146,21 @@ header h2
     outline: none;
 }
 
-.recherche
-{
-    margin: 11px 0;
-}
 
-.zoom_icon
+
+.search_icon
 {
     visibility: hidden;
     position: absolute;
+    background-color: #0065FC;
+    color: white;
+    border-style: hidden;
+}
+
+.search_i
+{
+    color: white;
+    font-size: 20px;
 }
 
 #serchholder
@@ -427,13 +433,7 @@ i
     justify-content: space-between;
 }
 
-.p2_star
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 55%;
-}
+
 #graph
 {
     display: flex;
@@ -777,15 +777,17 @@ i
         position: absolute;
     }
 
-    .zoom_icon
+    .search_icon
     {
+        width: 14%;
         position: initial;
         color: white;
         font-size: 24px;
         visibility: visible;
+        border-radius: 14px;
     }
     
-    #container_h1_h2_search
+    #container_header2
     {
         padding: 4%;
     }
@@ -848,6 +850,10 @@ i
     .img_fig2, .img_fig2, .img_column1
     {
         height: 78%;
+    }
+
+    .h2_section {
+        padding-left: 6%;
     }
 
     .h2_section2
