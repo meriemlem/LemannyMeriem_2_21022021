@@ -4,7 +4,7 @@ Premier projet de création d'une page web réalisée par moi ( Lemanny Meriem )
 -
 --
 -
-Il s'agit d'une page web d'un site internet de réservation d'ébergements et d'activités en choisissent la ville, le budget et un filtre personnalisé.
+Il s'agit d'une page web d'un site internet de réservation d'ébergements et d'activités en choisissant la ville, le budget et un filtre personnalisé.
 -
 ---
 -
